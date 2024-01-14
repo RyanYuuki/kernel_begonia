@@ -595,7 +595,10 @@ static int32_t nvt_xiaomi_lockdown_info_open(struct inode *inode, struct file *f
 	return single_open(file, nvt_xiaomi_lockdown_info_show, NULL);
 }
 
-********** NVT Parameters ***********
+/*******************************************************
+Description:
+        Novatek touchscreen Parameters function.
+*******************************************************/
 int32_t nvt_set_pf_switch(uint8_t pf_switch)
 {
 	uint8_t buf[8] = {0};
